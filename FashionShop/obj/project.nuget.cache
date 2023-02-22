@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "UcTzxhxlXSnNVFjTyyR7me7A3uBug3W4DOYfUZjIPkMd9Ploby3bBO4YPQrbjvWbIXEdvd5fcWRoea/TvigISQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Lenovo\\source\\repos\\FashionShop\\FashionShop\\FashionShop.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lenovo\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,17 @@
+C:\Users\Lenovo\source\repos\FashionShop\FashionShop\obj\Debug\net6.0\FashionShop.csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\FashionShop\FashionShop\obj\Debug\net6.0\FashionShop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\source\repos\FashionShop\FashionShop\obj\Debug\net6.0\FashionShop.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\FashionShop\FashionShop\obj\Debug\net6.0\FashionShop.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\FashionShop\FashionShop\obj\Debug\net6.0\FashionShop.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\FashionShop\FashionShop\bin\Debug\net6.0\FashionShop.exe
+C:\Users\Lenovo\source\repos\FashionShop\FashionShop\bin\Debug\net6.0\FashionShop.deps.json
+C:\Users\Lenovo\source\repos\FashionShop\FashionShop\bin\Debug\net6.0\FashionShop.runtimeconfig.json
+C:\Users\Lenovo\source\repos\FashionShop\FashionShop\bin\Debug\net6.0\FashionShop.dll
+C:\Users\Lenovo\source\repos\FashionShop\FashionShop\bin\Debug\net6.0\FashionShop.pdb
+C:\Users\Lenovo\source\repos\FashionShop\FashionShop\obj\Debug\net6.0\FashionShop.dll
+C:\Users\Lenovo\source\repos\FashionShop\FashionShop\obj\Debug\net6.0\refint\FashionShop.dll
+C:\Users\Lenovo\source\repos\FashionShop\FashionShop\obj\Debug\net6.0\FashionShop.pdb
+C:\Users\Lenovo\source\repos\FashionShop\FashionShop\obj\Debug\net6.0\FashionShop.genruntimeconfig.cache
+C:\Users\Lenovo\source\repos\FashionShop\FashionShop\obj\Debug\net6.0\ref\FashionShop.dll
+C:\Users\Lenovo\source\repos\FashionShop\FashionShop\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Lenovo\source\repos\FashionShop\FashionShop\obj\Debug\net6.0\FashionShop.csproj.CopyComplete
