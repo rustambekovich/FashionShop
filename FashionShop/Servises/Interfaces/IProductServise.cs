@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace FashionShop.Servises.Interfaces
 {
-    public interface IProductServise
+    /*public interface IProductServise
     {
         public Task<Response<Product>> AddAsync(Product product);
         public Task<Response<Product>> UpdateAsync(long id, Product product);
@@ -16,5 +16,15 @@ namespace FashionShop.Servises.Interfaces
         public Task<Response<Product>> GetByIsAsync(long id);
         public Task<Response<List<Product>>> GetAllAsync(Predicate<Product> predicate = null);
 
+    }*/
+    public interface IProductServise
+    {
+        public Task<Response<Product>> CreatAsync(Product user);
+
+        public Task<Response<List<Product>>> GetAllAsync(Predicate<Product> predicate = null);
+        public Task<Response<Product>> GetByIdAsync(long id);
+        public Task<Response<Product>> GetByNameAsync(string name);
+        public Task<Response<bool>> DeleateAsync(long id);
+        public Task<Response<Product>> UpdatAsync(long id, Product user);
     }
 }

@@ -26,7 +26,7 @@ namespace FashionShop.Data.Repository
             }
             else if(typeof(TEntity) == typeof(Product))
             {
-                path = Constans.ORDER_PATH;
+                path = Constans.PRODUC_PATH;
             }
         }
         public async Task<TEntity> CreatAsync(TEntity value)
@@ -50,6 +50,8 @@ namespace FashionShop.Data.Repository
 
         public async Task<bool> DelateAsync(Predicate<TEntity> predicate)
         {
+            entities = await GetAllAsync();
+
             TEntity entity = await GetAsync(x => predicate(x));
             if(entity == null)
                 return false;
@@ -63,7 +65,7 @@ namespace FashionShop.Data.Repository
 
         public async Task<TEntity> GetAsync(Predicate<TEntity> predicate)
         {
-            var entity = await GetAllAsync(x => predicate(x));
+            var entity = await GetAllAsync();
             if(entity == null)
                 return null;
             return entities.FirstOrDefault(x => predicate(x));
@@ -87,16 +89,17 @@ namespace FashionShop.Data.Repository
             return entities;
         }
 
-        public async Task<TEntity> UpdateAsync(TEntity value)
+        public async Task<TEntity> UpdateAsync(List<TEntity> entities, TEntity value)
         {
-            TEntity objectToUpdate = await GetAsync(x => x.Id == value.Id);
-            objectToUpdate.updated_at = DateTime.UtcNow;
-            var index = entities.IndexOf(objectToUpdate);
-            entities.RemoveAt(index);
-            entities.Insert(index, value);
 
-            string jsonmodul = JsonConvert.SerializeObject(entities);
+            var valuejson = JsonConvert.SerializeObject(entities);
+            Console.WriteLine("update : " + valuejson.ToString());
+            var json = File.ReadAllTextAsync(path).ToString();
+            Console.WriteLine(json.ToString());
+            await File.WriteAllTextAsync(path, valuejson);
+
             return value;
+
         }
     }
 }

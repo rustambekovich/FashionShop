@@ -2,20 +2,16 @@
 
 using FashionShop.Presesation.LoginPage;
 
-namespace ECommerce.Presentation
+namespace FashionShop.Presentation
 {
     class Program
     {
-        //private static IOrderService orderService = new OrderService();
         private static async Task Main(string[] args)
         {
-            while (true)
-            {
-                var login = new LoginPage();
-                var currentUser = await login.Loginpage();
-                Console.ReadKey();
-
-            }
+            var login = new Test();
+/*            var currentUser = await login.TestUser();
+*/            var tes = await login.TestProduct();
+            Console.ReadKey();
         }
     }
 }

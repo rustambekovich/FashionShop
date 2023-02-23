@@ -1,1 +1,44 @@
-[{"FirstName":"dfgdf","LastName":"1234567890","UserName":"zdfbdf","Email":"dfbfd","Password":"1234567890","Data_of_bithday":"sdfvfdbv","PhoneNumber":"1234567890","genter_type":0,"Role":0,"Id":0,"created_at":"2023-02-23T03:59:10.1059897Z","updated_at":"2023-02-23T08:59:10.0333849+05:00"}]
+[
+  {
+    "FirstName": "asad",
+    "LastName": "qoraboyev",
+    "UserName": "asdbek",
+    "Email": "asad@gmail",
+    "Password": "1234567890",
+    "Data_of_bithday": "sdfvfdbv",
+    "PhoneNumber": "1234567890",
+    "genter_type": 0,
+    "Role": 0,
+    "Id": 0,
+    "created_at": "2023-02-23T06:23:23.1966489Z",
+    "updated_at": "2023-02-23T11:23:23.8925597+05:00"
+  },
+  {
+    "FirstName": "fdbsdf",
+    "LastName": "1dvdsg",
+    "UserName": "1dcfbdfb",
+    "Email": "1@1",
+    "Password": "dfdfh1",
+    "Data_of_bithday": "adfb1",
+    "PhoneNumber": "xc",
+    "genter_type": 10,
+    "Role": 0,
+    "Id": 2,
+    "created_at": "2023-02-23T08:07:33.5902665Z",
+    "updated_at": "2023-02-23T08:07:20.7577353Z"
+  },
+  {
+    "FirstName": "0",
+    "LastName": "0",
+    "UserName": "0",
+    "Email": "0",
+    "Password": "0",
+    "Data_of_bithday": "0",
+    "PhoneNumber": "0",
+    "genter_type": 10,
+    "Role": 0,
+    "Id": 3,
+    "created_at": "2023-02-23T08:25:17.3887629Z",
+    "updated_at": "2023-02-23T08:25:16.8682452Z"
+  }
+]

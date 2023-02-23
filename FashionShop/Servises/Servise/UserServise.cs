@@ -12,8 +12,8 @@ namespace FashionShop.Servises.Servise
         public async Task<Response<User>> CreatAsync(User user)
         {
             var model = await repositoryservise.GetAsync(x => x.UserName == user.UserName
-            || x.Email.ToLower() == user.Email.ToLower()
-            || x.PhoneNumber == user.PhoneNumber);
+            & x.Email.ToLower() == user.Email.ToLower()
+            & x.PhoneNumber == user.PhoneNumber);
             if (model != null)
             {
                 return new Response<User>()
@@ -33,7 +33,7 @@ namespace FashionShop.Servises.Servise
         public async Task<Response<bool>> DeleateAsync(long id)
         {
             var model = await repositoryservise.GetAsync(p => p.Id == id);
-            if (model is not null)
+            if (model is null)
             {
                 return new Response<bool>
                 {
@@ -53,7 +53,7 @@ namespace FashionShop.Servises.Servise
 
         public async Task<Response<List<User>>> GetAllAsync(Predicate<User> predicate = null)
         {
-            var res = await repositoryservise.GetAllAsync(x => predicate(x));
+            var res = await repositoryservise.GetAllAsync(predicate);
             return new Response<List<User>>()
             {
                 StatusCode = 200,
@@ -98,11 +98,24 @@ namespace FashionShop.Servises.Servise
             var model = entities.FirstOrDefault(u => u.Id == id);
             if (model is null)
                 return new Response<User>();
+            Console.WriteLine("ok2");
+            model.Id = id;
+            model.PhoneNumber = user.PhoneNumber;
+            model.UserName = user.UserName;
+            model.Email = user.Email;
+            model.Password = user.Password;
+            model.FirstName = user.FirstName;
+            model.LastName = user.LastName;
+            model.updated_at = DateTime.Now;
+            model.created_at = user.created_at;
+
+            var res = await repositoryservise.UpdateAsync(entities, model);
+
             return new Response<User>()
             {
                 StatusCode = 201,
                 Message = "ok",
-                Result = model
+                Result = res
             };
         }        
     }
