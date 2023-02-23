@@ -8,7 +8,7 @@ namespace FashionShop.Data.Configuration
 {
     public class Constans
     {
-        public const string USER_PATH = @"..\..\..\..\FashionShop\Databases\User.json";
+        public const string USER_PATH = @"..\..\..\..\..\FashionShop\FashionShop\Data\Databases\Users.json";
         public const string ORDER_PATH = @"..\..\..\..\FashionShop\Databases\Order.json";
 
     }

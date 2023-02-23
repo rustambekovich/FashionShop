@@ -43,6 +43,7 @@ namespace FashionShop.Data.Repository
             value.created_at = DateTime.UtcNow;
             entities.Add(value);
             string jsonmodul = JsonConvert.SerializeObject(entities);
+            Console.WriteLine(jsonmodul);
             File.WriteAllText(path, jsonmodul);
             return value;
         }

@@ -1,5 +1,6 @@
 ﻿using FashionShop.Domin.Entities;
 using System;
+using FashionShop.Servises.Helper;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ namespace FashionShop.Servises.Interfaces
         public Task<Response<Product>> UpdateAsync(long id, Product product);
         public Task<Response<bool>> DeleteAsync(long id);
         public Task<Response<Product>> GetByIsAsync(long id);
-        public Task<Response<Product>> GetAllAsync(Predicate<Product> predicate = null);
+        public Task<Response<List<Product>>> GetAllAsync(Predicate<Product> predicate = null);
 
     }
 }
